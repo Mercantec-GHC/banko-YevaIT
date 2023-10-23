@@ -32,3 +32,13 @@ int[,] plade5 =
     {0,13,25,36,47,0,62,0,0},
     {0,17,29,39,49,0,0,0,89}
 };
+
+bool gameRun = false;
+int activPlade = 0; 
+
+class  banko
+{
+    selectPlade();
+    inputNumber();
+    startGame();
+}
