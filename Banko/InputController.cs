@@ -29,7 +29,7 @@ public class InputController
             }
             else
             {
-                Console.WriteLine(messageController.GetIncorrectInputMessage());
+                render.ShowMessage(messageController.GetIncorrectInputMessage());
             }
 
         }

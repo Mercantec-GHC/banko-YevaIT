@@ -1,18 +1,9 @@
 ﻿using Banko;
 
-var platesGenerator = new Plates();
-var render = new TerminalRender();
 
-string[,] plate1 = platesGenerator.GetPlate(3);
-render.ShowPlate(plate1);
+ GameBanko gameBanko = new GameBanko();
 
-
-InputController controller = new InputController();
-MessageController messageController = new MessageController();
-
-int returnNum = controller.ReadNum(messageController.GetWelcomeMessage(), 1, 5);
-
-render.ShowMessage(messageController.GetWinMessage(2));
+gameBanko.Run();
 
 
 
