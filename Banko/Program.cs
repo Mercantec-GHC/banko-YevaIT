@@ -8,8 +8,11 @@ render.ShowPlate(plate1);
 
 
 InputController controller = new InputController();
+MessageController messageController = new MessageController();
 
-int returnNum = controller.ReadNum("Welcome to the Banko game. Please, write number of plate (We have only 5 plates)", 1, 5);
+int returnNum = controller.ReadNum(messageController.GetWelcomeMessage(), 1, 5);
+
+render.ShowMessage(messageController.GetWinMessage(2));
 
 
 
